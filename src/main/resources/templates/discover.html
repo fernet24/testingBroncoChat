@@ -17,8 +17,8 @@
 	  <a href="/about">About Us</a>
 	  <a href="https://docs.google.com/presentation/d/16hoy5OqIleoWL_yokoEcL4HXPscrsbv71Asb41t1P8o/edit?usp=sharing">Presentation</a>
 	
-	<div class="topnavs-right">
-			<a href="/login">Log-In</a>
+	<div class="topnav-right">
+			<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
 		</div>
 	</div>
 	

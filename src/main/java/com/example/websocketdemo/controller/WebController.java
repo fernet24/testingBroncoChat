@@ -19,15 +19,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class WebController {
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET) 
 	public String login() {
-	    return "login.html";
+	    return "login.html"; 
 	}
 	
-	@RequestMapping(value = "/signup", method = RequestMethod.GET)
-	public String signup() {
-	    return "signup.html";
-	}
 	
 	@RequestMapping(value = "/discover", method = RequestMethod.GET)
 	public String discover() {

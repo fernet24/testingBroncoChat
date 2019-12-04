@@ -20,7 +20,7 @@
 	  <a href="https://docs.google.com/presentation/d/1QrJQcd8bTNokikVI27NCgqzTkAspKn0uk7QUiuAzXak/edit?usp=sharing">Presentation</a>	
 		
 		<div class="topnav-right">
-			<a href="/login">Log-In</a>
+			<li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
 		</div>
 	</div>
 	
