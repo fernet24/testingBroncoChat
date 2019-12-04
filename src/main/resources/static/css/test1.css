@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.58;
+    color: #333;
+    background-color: #00843d;
+    height: 100%;
+}
+
+
+signup{
+	background: #efefef;
+	font-size: 16px;
+	color: #777;
+	font-family: sans-serif;
+    font-weight: 300;
+    top: 45%
+}
+
+#login-box{
+	position: relative;
+	margin: 9% auto;
+	height: 400px;
+	width: 400px;
+	background:  #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.login-box{
+	position: absolute;
+	top:0;
+	left:0;
+	box-sizing: border-box;
+	padding: 40px;
+	width: 300px;
+    height: 40px;
+}
+
+signup h1{
+	margin: 0 0 20px 0;
+	color: black;
+	font-weight: 300;
+	font-size: 28px;
+}
+
+signup input[type="text"],
+input[type="password"]{
+	display:block;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	padding: 4px;
+	width: 320px;
+	height: 32px;
+	border:none;
+	outline: none;
+	border-bottom: 1px solid #aaa;
+	font-family: sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	transition: 0.2s 
+}
+
+signup input[type="submit"]{
+	margin-top: 15px;
+	margin-bottom: 28px;
+	width: 120px;
+	height: 40px;
+	background: #f44336;
+	border:none;
+	border-radius: 3px;
+	color: #fff;
+	font-family: sans-serif;
+	font-weight: 500;
+	text-transform: 0.2s ease;
+	cursor: pointer;
+}
+
+signup input[type="submit"]:hover,
+input[type="submit"]:focus{
+	background: ff5722;
+	transition: 0.2s ease;
+}
+
+.title-page-container {
+	max-width: 350px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-size: 41px;
+	text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00843d;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    margin-top: 100px;
+    height: 11.4%;
+    max-height: 600px;
+    position: relative;
+}
+
+.meetups-page-container {
+	max-width: 100px;
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	font-size: 15px;
+	text-align:center;
+    margin-left: 10px;
+    background-color: #228B22;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    margin-top: -220px;
+    height: calc(100% - 60px);
+    max-height: 200px;
+    position: relative;
+}
+
+body:before {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffb500;
+    content: "";
+    z-index: 0;
+}
+
+.topnav {
+	background-color: #01426a;
+	background: url(https://www.cpp.edu/common/2018/assets/img/blue-green-poly.png);
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+
+.topnav a {
+	float: left;
+	color: #ffffff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	background: url(https://www.cpp.edu/common/2018/assets/img/blue-green-poly.png);
+	background-position: right bottom;
+	color: #f4f4f4;
+}
+
+
+.topnav-right {
+	float: right;
+}
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}

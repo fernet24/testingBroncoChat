@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <title>Successfully registered</title>
+      <link rel="stylesheet" href="/css/registerPage.css" />
+      <link href="css/bootstrap.min.css" rel="stylesheet" th:href="@{/css/bootstrap.min.css}"/>
+      <link rel="icon" href="images/favicon.ico"/>
+      <style>
+        span {color: black;}
+      </style>
+   </head>
+    
+   <body>
+    	<div class="topnavs">
+         <a href="/">Home</a>
+         <a href="/meetups">Meet Ups</a>
+         <a href="https://github.com/CS4800-Team-MAKER/ChatTest">GitHub</a>
+         <a href="/about">About Us</a>
+         <a href="https://docs.google.com/presentation/d/1QrJQcd8bTNokikVI27NCgqzTkAspKn0uk7QUiuAzXak/edit?usp=sharing">Presentation</a>
+     
+         <div class="topnavs-right">
+               <a href="/login">Log-In</a>
+         </div>
+         <div class="topnavs-right">
+            <img src="https://www.cpp.edu/common/resources/img/billy_bronco_top10.png" height=42 width=42>
+         </div>
+      </div>
+
+      <div class="container">
+         <br>
+         <br>
+         <div class="alert alert-success" role="alert">
+            <h2 class="alert-heading">You have successfully registered!</h2>
+            
+            <div th:if="${flashUser != null}">
+                  <h5 class="alert-heading">Event Name</h4>
+                  <span th:utext="${flashUser.userName}">..</span>
+                  <hr>
+                  <h5 class="alert-heading">Email</h4>
+                  <span th:utext="${flashUser.email}">..</span>
+            </div>
+         </div>
+            
+
+         <form action="/events">
+            <input class="btn btn-primary btn-lg" type="submit" value="Events!" />
+         </form>
+      </div> 
+
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>

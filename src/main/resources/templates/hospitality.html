@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <title>Bronco Chat</title>
+	  <link rel="stylesheet" href="/css/main.css" />
+	  <link rel="icon" href="images/favicon.ico"/>
+  </head>
+  <body>
+    <noscript>
+      <h2>Sorry! Your browser doesn't support Javascript</h2>
+    </noscript>
+	
+    <div class="topnav">
+	  <a class="active" href="/">Home</a>
+	  <a href="/meetups">Meet Ups</a>
+	  <a href="https://github.com/CS4800-Team-MAKER/ChatTest">GitHub</a>
+	  <a href="/about">About Us</a>
+	  <a href="https://docs.google.com/presentation/d/16hoy5OqIleoWL_yokoEcL4HXPscrsbv71Asb41t1P8o/edit?usp=sharing">Presentation</a>
+		
+		<div class="topnav-right">
+			<a href="/login">Log-In</a>
+		</div>
+	</div>
+	
+	<div id="title-page">
+		<div class="title-page-container">
+		<h1><a href="/" style="color:#ffb500" class="title">Bronco Chat</a></h1>
+		</div>
+	</div>
+
+    <div id="username-page">
+        <div class="username-page-container">
+        	<img src="https://www.cpp.edu/common/resources/img/billy_bronco_top10.png">
+            <h1 class="title">Enter your Username</h1>
+            <form id="usernameForm" name="usernameForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Username" autocomplete="off" class="form-control" />
+                </div>
+ 				<div class="collegeOptions">            
+                	<h1 class="title">Select your college</h1>
+					<form id="majorForm" name="majorForm">
+						<select name="major">
+							<option disabled selected value> -- Select an Option -- </option>
+		               		<option value="agriculture">College of Agriculture</option>
+					   		<option value="business">College of Business Administration</option>
+					    	<option value="education">College of Education & Integrative Studies</option>
+						    <option value="engineering">College of Engineering</option>
+							<option value="environmentaldesign">College of Environmental Design</option>
+							<option value="hospitality">College of Hospitality Management</option>
+							<option value="class">College of Letters, Arts & Social Sciences</option>
+							<option value="science">College of Science</option>						
+					</form>
+						</select>
+				</div>
+	            <div class="form-group">          
+                    <button type="submit" class="accent username-submit">Start Chatting</button>
+                </div>          
+            </form>
+        </div>
+    </div>
+
+    <div id="chat-page" class="hidden">
+        <div class="chat-container">
+          	<div class="server-container">
+			<div class="server-header">
+				<h2>List of Servers</h2>
+			</div>
+			<div class="server-list">
+				<h5><a href="/agriculture" style="color:#ffffff">College of Agriculture</a></h5>
+				<h5><a href="/business" style="color:#ffffff">College of Business Administration</a></h5>
+				<h5><a href="/education" style="color:#ffffff">College of Education & Integrative Studies</a></h5>
+				<h5><a href="/engineering" style="color:#ffffff">College of Engineering</a></h5>
+				<h5><a href="/environmentaldesign" style="color:#ffffff">College of Environmental Design</a></h5>
+				<h5><a style="color:#ffb500">College of Hospitality Management</a></h5>
+				<h5><a href="/lettersArtsSocialSciences" style="color:#ffffff">College of Letters, Arts & Social Sciences</a></h5>
+				<h5><a href="/science" style="color:#ffffff">College of Science</a></h5>
+				<h5><a href="/" style="color:#ffffff">General Chat</a></h5>
+			</div>
+		</div>
+            <div class="chat-header">
+                <h2>College of Hospitality Management Chat</h2>
+            </div>
+            <div class="connecting">
+                Connecting...
+            </div>
+            <ul id="messageArea">
+
+            </ul>
+            <form id="messageForm" name="messageForm">
+                <div class="form-group">
+                    <div class="input-group clearfix">
+                        <input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="form-control"/>
+                        <button type="submit" class="primary">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="/js/hospitality.js"></script>
+  </body>

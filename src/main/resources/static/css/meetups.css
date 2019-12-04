@@ -1,0 +1,41 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.topnavs {
+	background-color: #01426a;
+	background: url(https://www.cpp.edu/common/2018/assets/img/blue-green-poly.png);
+	overflow: hidden;
+	position: relative;
+}
+
+.topnavs a {
+	float: left;
+	color: #ffffff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnavs a:hover {
+	background-color: #ddd;
+	background: url(https://www.cpp.edu/common/2018/assets/img/blue-green-poly.png);
+	background-position: right bottom;
+	color: #f4f4f4;
+}
+
+.topnavs-right {
+	float: right;
+}
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.row > div[class*='col-'] {
+  display: flex;
+}

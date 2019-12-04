@@ -1,0 +1,102 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.topnavs {
+	background-color: #01426a;
+	background: url(https://www.cpp.edu/common/2018/assets/img/blue-green-poly.png);
+	overflow: hidden;
+	position: relative;
+}
+
+.topnavs a {
+	float: left;
+	color: #ffffff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnavs a:hover {
+	background-color: #ddd;
+	background: url(https://www.cpp.edu/common/2018/assets/img/blue-green-poly.png);
+	background-position: right bottom;
+	color: #f4f4f4;
+}
+/*
+.topnavs a.active {
+	background-color: #4CAF50;
+	background-position: right bottom;
+	background: url(https://www.cpp.edu/common/2018/assets/img/blue-green-poly.png);
+	color: #ffffff;
+}
+*/
+
+.topnavs-right {
+	float: right;
+}
+
+body {
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.container{
+    width: 75%;           /* the width of the block, can use pixels, 960px, but percentages are better because it changes dynamically, the page is responsive */
+	margin: auto;           /* equal amount of margin on each side*/
+}
+
+h1{
+	text-align: center;
+	color: #000;
+}
+
+h3{
+	text-align: center;
+	margin: 0%;
+	padding: 0%;
+	color: #000;
+}
+
+p{
+	text-align: center;
+	font-size: 140%;
+	color: #000;
+}
+
+.column {
+	float: left;
+	width: 20%;
+  }
+
+  .column img{
+	  width: 115px;
+	  height: 115px;
+	  display:	block;
+	  margin-left: auto;
+	  margin-right: auto;
+  }
+
+ 
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+  #header{
+	  color: #000;
+	  position: relative;
+  }
